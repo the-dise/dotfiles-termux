@@ -1,0 +1,41 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": "linux_small",
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        {
+            "type": "title",
+            "color": {
+                "user": "yellow",
+                "at": "red",
+                "host": "blue"
+            },
+            "format": "{#33}the_dise{#31}@{#34}termux"
+        }, 
+        "break",
+        {
+            "key": "{#32} ",
+            "type": "os",
+            "format": "{2} {9}"
+        },
+        {
+            "key": "{#31}󰋕 ",
+            "type": "kernel",
+            "format": "{release}" // Reduce to the first 10 characters
+        },
+        {
+            "key": "{#34}󰍛 ",
+            "type": "memory"
+        },
+        {
+            "key": "{#33}󰏓 ",
+            "type": "packages"
+        },
+        {
+            "key": "{#35}󰅐 ",
+            "type": "uptime"
+        }
+    ]
+}
