@@ -8,13 +8,14 @@ alias mv='mv -i'
 alias rm='rm -ri'
 alias md='mkdir -p'
 alias rd='rmdir'
+alias home='cd /storage/emulated/0'
 
 # -- list directory contents -------------------------------------------------
 # Use eza (a modern ls replacement) with options suited for Termux
-alias l='eza --git --header --long --color=always --icons'
+alias l='eza --git --header --color=always --icons'
 alias ls='eza'
-alias ll='eza --git --header --color=always --icons'
-alias la='eza --all --git --header --long --color=always --icons'
+alias ll='eza --git --header --long --color=always --icons'
+alias la='eza --all --git --header --color=always --icons'
 
 # -- colorize ----------------------------------------------------------------
 # Use bat and other tools with color support if available
@@ -41,8 +42,7 @@ alias open='termux-open'
 # -- system info -------------------------------------------------------------
 alias ff='fastfetch' # Display system information
 alias ffa="fastfetch -c all.jsonc"
-alias k='uname -rs'             # Display kernel name and version
-alias age='stat / | grep Birth' # Display system installation date
+alias k='uname -rs' # Display kernel name and version
 
 # -- clipboard operations ----------------------------------------------------
 # Clipboard operations using termux-clipboard

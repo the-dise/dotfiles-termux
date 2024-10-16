@@ -98,7 +98,7 @@ format = '[ $user ]($style)'
 [directory]
 style = "fg:mantle bg:peach"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -108,7 +108,9 @@ truncation_symbol = "…/"
 "Pictures" = "󰥶 "
 "Videos" = "󰯜 "
 "Develop" = "󰘦 "
-".dotfiles" = "󰘓 "
+".dotfiles-termux" = "󰘓 "
+"termux" = " "
+"storage" = "󰋜 "
 
 [git_branch]
 symbol = " "
@@ -170,7 +172,7 @@ style = "bg:mantle"
 format = '[[ $symbol( $context) ](fg:base bg:blue)]($style)'
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:peach"
 format = '[[ 󰅐 $time ](fg:mantle bg:pink)]($style)'
