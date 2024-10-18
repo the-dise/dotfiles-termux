@@ -172,7 +172,7 @@ style = "bg:mantle"
 format = '[[ $symbol( $context) ](fg:base bg:blue)]($style)'
 
 [time]
-disabled = true
+disabled = false
 time_format = "%R"
 style = "bg:peach"
 format = '[[ 󰅐 $time ](fg:mantle bg:pink)]($style)'
