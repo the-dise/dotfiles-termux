@@ -121,6 +121,43 @@ visit_github() {
   termux-open "https://github.com/the-dise/dotfiles-termux"
 }
 
+# Function to show author repository and prompt to open Telegram channel
+author() {
+  clear
+  echo -e " \e[1m$ the_dise █\e[0m \n"
+
+  # Ask the user if they want to open the Telegram channel
+  read -r -p "Visit the author's Telegram channel [Y/n]: " choice
+
+  # Default to 'Y' if no input is provided
+  choice=${choice:-Y}
+
+  case $choice in
+  [Yy]*)
+    clear
+    echo "Thanks thank you for your interest :)"
+    sleep 2
+    termux-open "https://t.me/thedise"
+    ;;
+  [Nn]*)
+    clear
+    echo " ___________"
+    echo "| so sad :( |"
+    echo "  ==========="
+    echo "           \\"
+    echo "            \\"
+    echo "              ^__^"
+    echo "              (oo)\_______"
+    echo "              (__)\       )\/\\"
+    echo "                  ||----w |"
+    echo "                  ||     ||"
+    ;;
+  *)
+    echo "Invalid input. Please enter Y or n."
+    ;;
+  esac
+}
+
 # Helper function to run os.sh script
 run_os_script() {
   [ -f "$DOTFILES_DIR/setup.sh" ] && bash "$DOTFILES_DIR/setup.sh"
@@ -150,6 +187,7 @@ menu() {
 6) Switch Shell
 7) Update Dotfiles
 8) Visit GitHub
+9) Author
 0) Exit
 
 EOF
@@ -163,6 +201,7 @@ EOF
   6) switch_shell ;;
   7) update_dotfiles ;;
   8) visit_github ;;
+  9) author ;;
   0) exit ;;
   *) invalid_input ;;
   esac
