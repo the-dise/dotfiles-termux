@@ -109,8 +109,7 @@ truncation_symbol = "…/"
 "Pictures" = "󰥶 "
 "Videos" = "󰯜 "
 "Develop" = "󰘦 "
-".dotfiles-termux" = "󰘓 "
-"termux" = " "
+".dotfiles-termux" = " "
 "storage" = "󰋜 "
 
 [git_branch]
