@@ -90,6 +90,7 @@ format = '[$ssh_symbol $hostname ]($style)'
 disabled = false
 
 [username]
+disabled = true
 show_always = true
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
