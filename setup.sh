@@ -127,7 +127,7 @@ visit_github() {
 author() {
   clear
   echo -e " \e[1m$ the_dise █\e[0m \n"
-
+  echo -e " $ ver. 101924-1734\n"
   # Ask the user if they want to open the Telegram channel
   read -r -p "Visit the author's Telegram channel [Y/n]: " choice
 
@@ -191,6 +191,7 @@ menu() {
 8) Visit GitHub
 9) Author
 0) Exit
+
 
 EOF
   read -r -p $'\e[1;92mChoose Option: \e[0m' choice
