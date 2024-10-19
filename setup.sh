@@ -86,8 +86,10 @@ switch_to_shell() {
 }
 
 install_nvim() {
-  pkg install neovim
-  git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+  pkg install neovim git
+  git clone https://github.com/NvChad/starter ~/.config/nvim
+  relink "$OBJECT_DIR/nvim/lua" ~/.config/nvim/lua
+  nvim
 }
 
 # Function to install a Nerd Font
